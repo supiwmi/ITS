@@ -4,11 +4,11 @@ pipeline {
         stage('clone the repo and removing the existing one')
         {
           steps {
-              sh "sudo rm -rf /home/suparuek/project"
+              sh "sudo rm -rf /home/suparuek/ITS"
               sh "cd /home/suparuek/"
-              sh "mkdir -p /home/suparuek/project"
-              sh "cd /home/suparuek/project"
-              sh "git clone https://github.com/supiwmi/ITS.git /home/suparuek/project"
+              sh "mkdir -p /home/suparuek/ITS"
+              sh "cd /home/suparuek/ITS"
+              sh "git clone https://github.com/supiwmi/ITS.git"
                
                }
          }
